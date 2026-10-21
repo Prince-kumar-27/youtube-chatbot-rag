@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Chat (RAG)",
+  "version": "0.1.0",
+  "description": "Summarize any YouTube video and ask questions about it, with answers linked to exact timestamps.",
+  "permissions": ["scripting"],
+  "action": {
+    "default_title": "Open video chat (on a YouTube video page)"
+  },
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

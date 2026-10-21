@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+langchain-core
+langchain-community
+langchain-openai
+faiss-cpu
+python-dotenv
+youtube-transcript-api>=1.0
+pytest
+httpx
