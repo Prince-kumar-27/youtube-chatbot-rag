@@ -90,7 +90,9 @@ python -m venv .venv
 Activate the virtual environment on Windows:
 
 ```powershell
-.venv\Scripts\Activate.ps1
+    .venv\Scripts\activate
+    or
+    .venv\Scripts\Activate.ps1
 ```
 
 Install dependencies:
@@ -165,3 +167,16 @@ pytest
 
 ## Ideas to extend
 Whisper fallback, per-video chat memory, streaming answers, multilingual summaries, saving past summaries.
+#--------------------------------------------------------------------------------------------
+#Images
+
+## Screenshots
+
+### YouTube Video Chat Interface
+![YouTube Video Chat Interface](docs/images/main-interface.png)
+
+### AI Chat with Timestamped Answers
+![AI Chat with Timestamped Answers](docs/images/chat-answer.png)
+
+### AI-Generated Video Summary
+![AI-Generated Video Summary](docs/images/video-summary.png)
